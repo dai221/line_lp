@@ -52,7 +52,7 @@
 }
 
 .hiyou{
-  background-color: green;
+  background-color:  #07b53b;
   width: 50%;
   color: #fff;
 }
@@ -70,7 +70,7 @@
 
 .content-box2{
   border-bottom: green 1px solid;
-  color: green;
+  color: #07b53b;
 }
 
 .content-box3{
@@ -96,7 +96,7 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: green;
+  color: #07b53b;
   font-size: 18px;
 }
 
@@ -115,7 +115,7 @@
 .contact{
   text-align: center;
   margin: 0 auto;
-  background-color: #07b53b;
+  background-color:#eeb43b;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -253,7 +253,7 @@ nav.globalMenuSp.active {
 }
 
 .num-icon{
-  background-color: green;
+  background-color: #07b53b;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -302,7 +302,7 @@ nav.globalMenuSp.active {
   top: 100%;
   left: 30px;
   border: 15px solid transparent;
-  border-top: 15px solid green;
+  border-top: 15px solid #07b53b;
   width: 0;
   height: 0;
 }
