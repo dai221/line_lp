@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
   color: #333;
-}
-
-.content{
-  margin-bottom: 10%;
+  font-family: "Noto Sans JP",sans-serif;
 }
 
 .content2{
@@ -86,10 +83,6 @@
 .content-box5{
   font-size: 18px;
   font-weight: bold;
-  /* text-shadow: 1px 1px 0 #000, -1px -1px 0 #000,
-  -1px 1px 0 #000, 1px -1px 0 #000,
-  0px 1px 0 #000,  0-1px 0 #000,
-  -1px 0 0 #000, 1px 0 0 #000; */
 }
 
 .content-box7{
@@ -103,14 +96,6 @@
 .content-box10{
   background-color: white;
 }
-
-/* .form a{
-  display: inline-block;
-  padding: 1rem 8rem;
-  background: chartreuse;
-  color: #fff;
-  text-decoration: none;
-} */
 
 .contact{
   text-align: center;
@@ -209,9 +194,9 @@ nav.globalMenuSp ul li {
 nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
 }
-nav.globalMenuSp ul li:hover{
-  /* background :#ddd; */
-}
+/* nav.globalMenuSp ul li:hover{
+  background :#ddd;
+} */
 
 nav.globalMenuSp ul li a {
   display: block;
@@ -226,15 +211,7 @@ nav.globalMenuSp.active {
   pointer-events: auto;
 }
 
-
-
 .title-top{
-  position: relative;
-  padding-left: 20px;
-  font-family: \30E1\30A4\30EA\30AA,Meiryo,\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,HiraKakuProN-W3,Hiragino Kaku Gothic Pro,NanumGothic,Malgun Gothic,sans-serif;
-}
-
-.title-top2{
   text-align: center;
   position: fixed;
   z-index: 10;
@@ -266,25 +243,6 @@ nav.globalMenuSp.active {
   display: flex;
 }
 
-/* .order{
-  background-color: #07b53b;
-  border-radius: 4px;
-  color: #fff;
-  position: relative;
-}
-
-.order :after{
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid red;
-  width: 0;
-  height: 0;
-} */
-
-
 .order, .order2 {
   position: relative;
   z-index: 0;
@@ -314,7 +272,7 @@ nav.globalMenuSp.active {
 
 .logo2 img{
   position: absolute;
-  top: 11px;
+  top: 0px;
   left: 2px;
 }
 
@@ -322,11 +280,14 @@ nav.globalMenuSp.active {
   margin-top: 130px;
 }
 
+.top-margin2{
+  margin-top: 100px;
+}
+
 .anchor{
   padding-top: 130px;
   margin-top: -130px;
 }
-
 
 .cp_qa *, .cp_qa *:after, .cp_qa *:before {
 	-webkit-box-sizing: border-box;
@@ -383,10 +344,25 @@ nav.globalMenuSp.active {
   display: none;
 }
 
-
 .content3{
   margin: 0 5%;
 }
+
+.foot-top{
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  font-size: 12px;
+}
+
+.foot-title{
+  color: white;
+}
+
+.foot-pri a{
+  text-decoration: none;
+  color: white;
+}
+
 
 /* レスポンシブ対応 */
 @media(min-width:767px){
@@ -402,6 +378,12 @@ nav.globalMenuSp.active {
   .content-box img{
     height: 50%;
   }
+
+  .foot-top{
+    display: flex;
+    justify-content: space-around;
+  }
+
 }
 
 @media(min-width:991px){
@@ -409,10 +391,15 @@ nav.globalMenuSp.active {
     width: 768px !important;
     margin: 0 auto !important;
   }
+
+  .content-img{
+    height: 384px;
+    object-fit: cover;
+  }
   
-  .title-top2{
+  .title-top{
     width: 768px !important;
-    margin: 0 21.6%;
+    margin: 0 29.85%;
   }
 
   /*　ハンバーガーボタン　*/
@@ -432,7 +419,7 @@ nav.globalMenuSp.active {
   position: absolute;
   width   : 30px;
   height  : 2px ;
-  left    : -60px;
+  left    : -340px;
   background : #fff;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition   : 0.3s ease-in-out;
@@ -451,7 +438,7 @@ nav.globalMenuSp.active {
 /* ナビ開いてる時のボタン */
 .hamburger.active span:nth-child(1) {
   top : 16px;
-  left: -60px;
+  left: -340px;
   background :#fff;
   -webkit-transform: rotate(-45deg);
   -moz-transform   : rotate(-45deg);
@@ -476,7 +463,7 @@ nav.globalMenuSp {
   background: rgba(0,0,0,0.7);
   text-align: center;
   width: 768px;
-  margin-left: 21.6%;
+  margin-left: 29.85%;
   opacity: 0;
   pointer-events: none;
   transition: opacity .6s ease, visibility .6s ease;
