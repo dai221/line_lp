@@ -365,6 +365,12 @@ nav.globalMenuSp.active {
 
 
 /* レスポンシブ対応 */
+@media(max-width:990px){
+  .content-box{
+    padding: 0 15px;
+  }
+}
+
 @media(max-width:360px){
   .title-top p{
     font-size: 15px;
