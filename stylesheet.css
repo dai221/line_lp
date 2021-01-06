@@ -1,4 +1,4 @@
-*,p{
+*,p,ul{
   margin: 0;
   padding: 0;
   color: #333;
@@ -216,7 +216,7 @@ nav.globalMenuSp.active {
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   font-size: 18px;
   background-color: #07b53b;
@@ -363,6 +363,10 @@ nav.globalMenuSp.active {
   color: white;
 }
 
+.pcmenu{
+  display: none;
+}
+
 
 /* レスポンシブ対応 */
 @media(max-width:990px){
@@ -413,7 +417,7 @@ nav.globalMenuSp.active {
 @media(min-width:991px){
   .content{
     width: 768px !important;
-    margin: 0 auto !important;
+    margin: 0 auto;
   }
 
   .content-img{
@@ -422,107 +426,45 @@ nav.globalMenuSp.active {
   }
   
   .title-top{
-    width: 768px !important;
-    margin: 0 29.85%;
+    margin: 0 auto;
+    width: 768px;
   }
 
-  /*　ハンバーガーボタン　*/
-.hamburger {
-  display : block;
-  position: fixed;
-  z-index : 10;
-  right : 250px;
-  top   : 25px;
-  width : 42px;
-  height: 42px;
-  cursor: pointer;
-  text-align: center;
-}
-.hamburger span {
-  display : block;
-  position: absolute;
-  width   : 30px;
-  height  : 2px ;
-  left    : -340px;
-  background : #fff;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition   : 0.3s ease-in-out;
-  transition        : 0.3s ease-in-out;
-}
-.hamburger span:nth-child(1) {
-  top: 10px;
-}
-.hamburger span:nth-child(2) {
-  top: 20px;
-}
-.hamburger span:nth-child(3) {
-  top: 30px;
-}
+  .hamburger, .globalMenuSp{
+    display: none;
+  }
 
-/* ナビ開いてる時のボタン */
-.hamburger.active span:nth-child(1) {
-  top : 16px;
-  left: -340px;
-  background :#fff;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform   : rotate(-45deg);
-  transform        : rotate(-45deg);
-}
+  .pcmenu{
+    display: block;
+    background-color: white;
+  }
+  
+  .pcmenu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .pcmenu ul li{
+    list-style-type: none;
+    font-size: 14px;
+  }
+  
+  .pcmenu a{
+    color: #333;
+    font-weight: bold;
+  }
 
-.hamburger.active span:nth-child(2),
-.hamburger.active span:nth-child(3) {
-  top: 16px;
-  background :#fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform   : rotate(45deg);
-  transform        : rotate(45deg);
-}
+  .anchor{
+    padding-top: 200px;
+    margin-top: -200px;
+  }
 
-nav.globalMenuSp {
-  position: fixed;
-  z-index : 10;
-  top  : 86px;
-  left : 0;
-  color: #fff;
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  width: 768px;
-  margin-left: 29.85%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .6s ease, visibility .6s ease;
-}
+  .top-margin{
+    margin-top: 180px;
+  }
 
-nav.globalMenuSp ul {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-nav.globalMenuSp ul li {
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  transition: .4s all;
-}
-nav.globalMenuSp ul li:last-child {
-  padding-bottom: 0;
-}
-nav.globalMenuSp ul li:hover{
-  /* background :#ddd; */
-}
-
-nav.globalMenuSp ul li a {
-  display: block;
-  color: #fff;
-  padding: 1em 0;
-  text-decoration :none;
-}
-
-/* このクラスを、jQueryで付与・削除する */
-nav.globalMenuSp.active {
-  opacity: 100;
-  pointer-events: auto;
-}
+  .top-margin2{
+    margin-top: 150px;
+  }  
 
 }
